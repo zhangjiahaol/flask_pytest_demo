@@ -1,11 +1,10 @@
 # flask_pytest_demo
 
-[![Build Status](https://travis-ci.org/piperck/flask_pytest_demo.svg?branch=master)](https://travis-ci.org/piperck/flask_pytest_demo)
+### 执行单元测试命令
+pip install -i https://pypi.douban.com/simple/ pytest==4.6.5 pytest-cov==2.8.1
+py.test --junit-xml=unittest.xml --cov-report=xml --cov=./ --cov-branch || true
+ls -lha
 
-flask_pytest_demo
-
-此仓库就是用来测试各种用例的python环境
-
-如果自己懒得搭建又想直接体验travis-ci的快感.
-
-就愉悦的使用和发pr吧：）。
+### 生成的报告文件
+./unittest.xml
+./coverage.xml
